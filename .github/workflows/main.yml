@@ -23,7 +23,7 @@ jobs:
         pip install -r requirements.txt || echo "No requirements"
 
     - name: Run Python script
-      run: python generate_report.py
+      run: python test.py
 
     - name: Upload result file (log.txt)
       uses: actions/upload-artifact@v4
